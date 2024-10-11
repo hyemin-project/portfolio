@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react'
 
-function App() {
+// 1. import `ChakraProvider` component
+import { ChakraProvider } from '@chakra-ui/react'
+import Title from './components/Title'
+import Nav from './components/Nav'
+import Contents from './components/Contents'
+import Skills from './components/Skills'
+import Experience from './components/Experience'
+import Contact from './components/Contact'
+
+export default function App() {
+  const contactRef = React.useRef(null);
+  const experienceRef = React.useRef(null);
+  const skillsRef = React.useRef(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraProvider>
+      <Nav contactRef={contactRef} experienceRef={experienceRef} skillsRef={skillsRef} />
+      <Title contactRef={contactRef} />
+      <Experience ref={experienceRef} />
+      <Skills ref={skillsRef} />
+      <Contents />
+      <Contact ref={contactRef} />
+    </ChakraProvider>
   );
 }
-
-export default App;

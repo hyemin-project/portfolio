@@ -6,6 +6,7 @@ import {
   ListItem,
   Highlight,
   UnorderedList,
+  useColorModeValue,
   Link,
   Heading,
 } from '@chakra-ui/react';
@@ -21,7 +22,7 @@ const Experience = React.forwardRef((props, ref) => {
       minH={'100vh'}
       align={'center'}
       justify={'center'}
-      bg="gray.50"
+      bg={useColorModeValue('gray.50', 'gray.800')}
       py="12"
     >
       <Flex
@@ -59,10 +60,10 @@ const Experience = React.forwardRef((props, ref) => {
               {' '} GSITM <ExternalLinkIcon mx='2px' />
             </Link>
           </Text>
-          <Text mb="6" opacity="0.7" fontSize="lg" color="gray.600">
+          <Text mb="6" opacity="0.7" fontSize="lg" color={useColorModeValue('gray.600', 'gray.300')}>
             November 2022 - November 2023
           </Text>
-          <UnorderedList spacing={3} fontSize="lg" color="gray.700">
+          <UnorderedList spacing={3} fontSize="lg">
             <ListItem>
               Engineered two monitoring systems for ship systems using Java with Spring within a 2-month deadline, enhancing real-time oversight and operational efficiency.
             </ListItem>
@@ -85,10 +86,10 @@ const Experience = React.forwardRef((props, ref) => {
               {' '} Bimatrix <ExternalLinkIcon mx='2px' />
             </Link>
           </Text>
-          <Text mb="6" opacity="0.7" fontSize="lg" color="gray.600">
+          <Text mb="6" opacity="0.7" fontSize="lg" color={useColorModeValue('gray.600', 'gray.300')}>
             November 2022 - November 2023
           </Text>
-          <UnorderedList spacing={3} fontSize="lg" color="gray.700">
+          <UnorderedList spacing={3} fontSize="lg" >
             <ListItem>
               Orchestrated presentations to communicate project progress and gather stakeholder feedback, fostering a collaborative team environment.
             </ListItem>

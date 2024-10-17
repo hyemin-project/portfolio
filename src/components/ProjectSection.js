@@ -10,54 +10,48 @@ const ProjectSection = React.forwardRef((props, ref) => {
   const projects = [
     {
       title: 'Yoga Website',
-      description: '쿠팡 웹페이지의 오늘의 발견 영역을 마크업한 결과물입니다.',
+      description: 'Designed a static frontend website for a yoga studio using React.',
       demo: 'https://co-op-yoga-website.vercel.app/', 
       image: '/assets/images/yoga.png', 
     },
     {
       title: 'Cloud Blog',
-      description: '프로젝트 설명 2',
+      description: 'Developed a serverless-style blog platform with real-time commenting. Backend API for CRUD operations and analytics.',
       demo: '#', 
       image: '/assets/images/cloudBlog.png',
     },
     {
-      title: 'Project 8',
-      description: '프로젝트 설명 8',
-      demo: 'https://outdoor-gear-project.vercel.app/',
-      image: '/assets/images/gearOutdoors.png',
-    },
-    
-    {
       title: 'Portfolio',
-      description: '프로젝트 설명 7',
+      description: 'Redesigned and optimized portfolio using Chakra UI and React for a modern user interface.',
       demo: '#',
       image: '/assets/images/portfolio.png',
     },
     {
-      title: 'homestay',
-      description: '프로젝트 설명 4',
+      title: 'Homestay Webpage',
+      description: 'Built a homestay webpage with functionalities similar to Agoda using React and Local Storage.',
       demo: '#',
       image: '/assets/images/homestay.png',
     },
     {
-      title: 'tagCloud',
-      description: '프로젝트 설명 3',
+      title: 'Tag Cloud Generator',
+      description: 'Created a React-based app for generating random tag clouds from user input, with backend API.',
       demo: '#',
       image: '/assets/images/tagCloud.png',
     },
     {
-      title: 'decisionMaker',
-      description: '프로젝트 설명 5',
+      title: 'Decision Maker',
+      description: 'Created a web app for decision-making using a customizable spinning wheel with probabilities.',
       demo: 'https://hyemin-project.github.io/coffee/',
       image: '/assets/images/decisionMaker.png',
     },
     {
       title: 'Cafe Website',
-      description: '프로젝트 설명 6',
+      description: 'Developed a cafe-themed website for showcasing products and services.',
       demo: 'https://hyemin-project.github.io/coffee/',
-      image: '/assets/images/coffee.png',
+      image: '/assets/images/cafe.png',
     },
   ];
+  
 
   return (
     <Flex

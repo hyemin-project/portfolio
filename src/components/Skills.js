@@ -111,7 +111,7 @@ const Skills = React.forwardRef((props, ref) => {
                                 transition={{ duration: 1.5 }}
                                 alignItems="center"
                                 justifyContent="flex-end"
-                                color="white"
+                                color="gray.60"
                                 fontWeight="bold"
                                 position="relative"
                                 pr="10px"

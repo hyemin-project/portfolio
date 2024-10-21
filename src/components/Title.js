@@ -99,7 +99,7 @@ export default function Title({ contactRef }) {
           />
           <IconButton
             as='a'
-            href='https://linkedin.com/in/hyemin-jang'
+            href='https://linkedin.com/in/hyemin-jang-2070aa204'
             target='_blank'
             aria-label='LinkedIn'
             icon={<FaLinkedin />}

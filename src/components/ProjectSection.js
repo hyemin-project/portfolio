@@ -45,6 +45,7 @@ const ProjectSection = React.forwardRef((props, ref) => {
       demo: '#',
       image: '/assets/images/tagCloud.png',
       techStack: ['React', 'Node.js', 'PostgreSQL'],
+      repo:'https://github.com/hyemin-project/tag-cloud-generator.git'
     },
     {
       title: 'Decision Maker',
@@ -52,6 +53,7 @@ const ProjectSection = React.forwardRef((props, ref) => {
       demo: 'https://hyemin-project.github.io/coffee/',
       image: '/assets/images/decisionMaker.png',
       techStack: ['Vue.js', 'Node.js', 'PostgreSQL'],
+      repo:'https://github.com/hyemin-project/decision-maker.git'
     },
     {
       title: 'Cafe Website',
@@ -59,6 +61,7 @@ const ProjectSection = React.forwardRef((props, ref) => {
       demo: 'https://hyemin-project.github.io/coffee/',
       image: '/assets/images/cafe.png',
       techStack: ['HTML5', 'CSS'],
+      repo:'https://github.com/hyemin-project/coffee.git'
     },
   ];
 
